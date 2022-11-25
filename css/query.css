@@ -1,0 +1,122 @@
+
+
+@media (min-width:768px){
+    .container{
+        width:80%;
+   
+    }
+  .main-nav{
+    max-width: 50rem;
+    margin-inline: auto;
+  }
+  
+    .grid-1-col{
+        grid-template-columns: repeat(2,35rem);
+        gap:var(--margin-m);
+    }
+    form{
+        grid-template-columns: 32rem 32rem;
+    }
+
+    .btn-cta{
+    grid-column: span 2;
+    padding:0.8rem 6rem;
+    font-size: 1.8rem;
+    }
+
+    .f-row{
+        display: flex;
+        justify-content: center;
+        gap:3rem;
+        align-items: center;
+    }
+    .as-card{
+      
+        margin:3rem auto;
+    }
+}
+
+@media (min-width:900px){
+    .main-nav-link:link,
+.main-nav-link:visited{
+   
+    font-size: 1.8rem;
+   
+  
+
+}
+    .flex-row{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap:10rem;
+    }
+  
+    .sec-hero{
+        
+        flex-direction: row-reverse;
+        
+       
+    }
+ 
+   .hero-content{
+    text-align: left;
+   
+    
+   }
+   .profile-area{
+    background-color: yellow;
+    max-width: 40rem;
+   }
+   /* .profile-area img{
+    margin-left:auto;
+    max-width: 30rem;
+   } */
+   .sec-about img{
+
+    margin:0;
+    
+   }
+   .about-txt,
+    .hero-txt{
+        text-align: left;
+        margin-left:2rem;
+        width: 40rem;
+    }
+    .about-txt{
+        width:35rem;
+    }
+    .sub-heading,
+    .hero-content .btn{
+     margin-left:2rem;
+    }
+
+    
+}
+
+@media (min-width:1200px){
+    .grid-1-col{
+        grid-template-columns: repeat(3,35rem);
+        column-gap:8rem;
+    }
+
+
+    .profile-area{
+     margin:0;
+    }
+    .flex-row{
+  
+        gap:28rem;
+    }
+    .profile-circle{
+
+        width:40rem;
+        height: 40rem;
+    }
+    .hero-img{
+        height:35rem;
+    }
+    .about-txt{
+        width:50rem;
+    }
+}
