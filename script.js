@@ -39,7 +39,7 @@ allLinks.forEach( function(link){
         //scroll back to top
         if(href==="#"){
             window.scrollTo({
-                top:0,
+                top:"-1rem",
                 behavior:"smooth",
 
             })
@@ -57,8 +57,11 @@ allLinks.forEach( function(link){
 
         //close mobile nav
         if(link.classList.contains('main-nav-link')){
-           toggleNav();
-            
+       
+            IconClose.classList.toggle("hide");
+            IconOpen.classList.toggle("hide");
+            header.classList.remove("open-nav");
+            html.classList.remove("hideOverflowY");   
         }
 
     });
