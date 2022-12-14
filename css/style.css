@@ -25,8 +25,9 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x:hidden;
 }
+
 
 *{
     padding:0;
@@ -68,6 +69,9 @@ section{
 /************** helper ************/
 .hide{
     display: none;
+}
+.hideOverflowY{
+    overflow-y: hidden;
 }
 .container{
     width:95%;
@@ -168,50 +172,83 @@ section{
 
 }
 
+.hide{
+    display: none;
+}
+
 /************** header ************/
 .header{
     padding:1rem 0.3rem;
-    background-color: white;
- position: fixed;
+    background-color: #fff;
+ position:fixed;
  top:0;
  left:0;
  width:100%;
  z-index: 3;
-
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+z-index:9999;
 
 }
-
-.main-nav-list{
+.header.open-nav{
+    background-color: transparent;
+}
+.btn-mobile-nav{
+    position: relative;
+   
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    z-index: 9999;
+}
+.main-nav{
+    display: none;
+}
+.open-nav .main-nav{
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background-color: #bac8ff;
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
 }
-
+.main-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
 .main-nav-link:link,
 .main-nav-link:visited{
     text-transform: capitalize;
     color:var(--clr-primary-shade);
     padding:0.3rem 0.5rem;
     font-size: 1.6rem;
+    transition: all 0.5s;
    
   
 
 }
-.main-nav-link::after{
-content:"";
-display:block;
-width:100%;
-height: 2px;
-background-color: var(--clr-primary-shade);
-transform:scaleX(0);
-transform-origin: left;
-transition: all 0.5s;
+.main-nav-link:hover,
+.main-nav-link:active{
+    text-transform: capitalize;
+    color:var(--clr-primary-shade);
+    padding:0.3rem 0.5rem;
+    font-size: 1.6rem;
+    background-color: #fff;
+   
+  
 
-
-;
 }
-.main-nav-link:hover.main-nav-link::after{
-transform: scaleX(1);
+.icon{
+    height: 2.4rem;
+    width: 2.4rem;
 }
 
 .active-link{
@@ -221,8 +258,9 @@ transform: scaleX(1);
 /************** hero ************/
 
 .sec-hero{
-    margin-top:5rem;
-    height: 100vh;
+
+   margin:5rem auto;
+
 }
 .profile-area{
     
