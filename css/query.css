@@ -9,7 +9,7 @@
     }
     .main-nav-list{
         display: flex;
-        flex-direction: row;
+       flex-direction:row;
         justify-content:space-between;
         align-items: center;
         max-width: 50rem;
@@ -78,7 +78,8 @@
     }
     .sec-hero{
         height: 100vh;
-        margin: 0 auto;;
+        margin: 0 auto;
+        margin-bottom: 3rem;
     }
 }
 
@@ -101,6 +102,8 @@
     .sec-hero{
         
         flex-direction: row-reverse;
+      
+        
         
        
     }

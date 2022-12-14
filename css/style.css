@@ -73,10 +73,12 @@ section{
 .hideOverflowY{
     overflow-y: hidden;
 }
+
 .container{
     width:95%;
     max-width: 140rem;
     margin-inline:auto;
+    
 }
 .card{
     width:32rem;
@@ -176,15 +178,16 @@ section{
     display: none;
 }
 
+
 /************** header ************/
 .header{
     padding:1rem 0.3rem;
     background-color: #fff;
- position:fixed;
+ position:sticky;
  top:0;
  left:0;
  width:100%;
- z-index: 3;
+
  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 z-index:9999;
 
@@ -261,10 +264,11 @@ z-index:9999;
 
    margin:5rem auto;
 
+
 }
 .profile-area{
     
-  
+ 
     position: relative;
     margin:var(--margin-l) auto;
     border-radius: 50%;
